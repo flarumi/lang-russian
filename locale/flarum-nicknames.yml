@@ -1,0 +1,24 @@
+flarum-nicknames:
+  admin:
+    permissions:
+      edit_own_nickname_label: Разрешить редактировать свой псевдоним
+    settings:
+      max_label: Максимальная длина псевдонима
+      min_label: Минимальная длина псевдонима
+      regex_label: Регулярное выражение для проверки
+      unique_label: Требуются определённые псевдонимы?
+    wrong_driver: Вы должны выбрать "nickname" в качестве драйвера отображаемого имени в <a><strong>основных настройках</strong></a>, чтобы это расширение вступило в силу.
+  api:
+    invalid_nickname_message: Данный псевдоним недействителен. Пожалуйста, свяжитесь с администратором форума для получения дополнительной информации о правилах использования псевдонимов.
+  forum:
+    change_nickname:
+      submit_button: => core.ref.save_changes
+      title:  => flarum-nicknames.ref.change_nickname
+    edit_user:
+      nicknames_heading: => flarum-nicknames.ref.change_nickname
+      nicknames_text: Псевдоним
+    settings:
+      change_nickname_button: => flarum-nicknames.ref.change_nickname
+
+  ref:
+    change_nickname: Изменить псевдоним

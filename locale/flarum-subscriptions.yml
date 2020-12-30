@@ -1,0 +1,80 @@
+flarum-subscriptions:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      following_tooltip: => flarum-subscriptions.ref.following
+      ignoring_tooltip: => flarum-subscriptions.ref.ignoring
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      unfollow_button: "Не отслеживать"
+      unignore_button: "Не игнорировать"
+      
+    # These translations are used on the page that displays all subscriptions.
+    following:
+      meta_title_text: => flarum-subscriptions.ref.following
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      following_link: "Отслеживаемое"
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      new_post_text: "{username} ответил в отслеживаемой теме."
+
+    # These translations are used in the Settings page.
+    settings:
+      follow_after_reply_label: "Отслеживать темы, в которых я отвечаю"
+      notify_new_post_label: "Ответ в темах, которые я отслеживаю"
+
+    # These translations are used in the subscription menu displayed to the right of the post stream.
+    sub_controls:
+      follow_button: => flarum-subscriptions.ref.follow
+      following_button: => flarum-subscriptions.ref.following
+      following_text: "Уведомлять о всех ответах"
+      ignoring_button: => flarum-subscriptions.ref.ignoring
+      ignoring_text: "Не уведомлять и скрыть в списке тем"
+      not_following_button: "Не отслеживать"
+      not_following_text: "Уведомлять только при упоминании"
+      notify_alert_tooltip: "Получать уведомления форума при появлении новых сообщений"
+      notify_email_tooltip: "Получать письма при появлении новых сообщений"
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when a post is made in a subscribed discussion
+    new_post:
+      subject: "Новое сообщение в отслеживаемой теме"
+      body: |
+        Привет {recipient_display_name},
+        
+        {poster_display_name} ответил(а) в теме '{title}', которую Вы отслеживаете.
+        
+        Подробнее тут:
+        {url}
+        
+        ---
+        
+        {content}
+        
+        ---
+        
+        Вы не получите больше писем, если не прочтёте новые сообщения в теме.
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    follow: "Отслеживать"
+    following: "Отслеживать"
+    ignoring: "Игнорировать"

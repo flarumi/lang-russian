@@ -1,0 +1,40 @@
+{
+    "name": "flarumi/lang-russian",
+    "type": "flarum-extension",
+    "description": "Russian language pack.",
+    "keywords": ["locale"],
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^0.1.0-beta.15"
+    },
+	 "authors": [
+    {
+      "name": "Flari",
+      "homepage": "https://flarum.info",
+      "role": "Editor"
+    }
+  ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Русский",
+            "category": "language",
+            "info": {
+                "name": "Flarum",
+                "website": "https://flarum.info"
+            },
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#f3f6f9",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "ru",
+            "title": "Русский"
+        }
+    }
+}
