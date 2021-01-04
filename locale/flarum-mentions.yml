@@ -43,7 +43,7 @@ flarum-mentions:
     post_mentioned:
       subject: "{replier_display_name} ответил(а) на Ваше сообщение"
       body: |
-        Здравствуй {recipient_display_name}!
+        Здравствуйте,{recipient_display_name}!
         
         Пользователь {replier_display_name} ответил(а) на Ваше сообщение #{post_number} в теме: {title}.
         
@@ -56,7 +56,7 @@ flarum-mentions:
     user_mentioned:
       subject: "{mentioner_display_name} упомянул(а) Вас в теме"
       body: |
-        Здравствуй {recipient_display_name}!
+        Здравствуйте, {recipient_display_name}!
         
         Пользователь {mentioner_display_name} упомянул(а) Вас в сообщении темы: {title}.
         
