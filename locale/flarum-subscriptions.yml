@@ -54,7 +54,7 @@ flarum-subscriptions:
     new_post:
       subject: "Появилось новое сообщение в отслеживаемой Вами теме"
       body: |
-        Здравствуй {recipient_display_name}!
+        Здравствуйте, {recipient_display_name}!
         
         Пользователь {poster_display_name} ответил(а) в отслеживаемой Вами теме: {title}.
         
