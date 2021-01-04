@@ -45,8 +45,8 @@ core:
       home_page_text: "Выберите страницу, которую пользователи будут видеть при посещении форума. При вводе пользовательских значений, используйте путь относительно корня форума."
       saved_message: "Изменения сохранены."
       show_language_selector_label: "Отображать переключатель языка"
-      slug_driver_heading: "Драйвер ЧПУ: {model}"
-      slug_driver_text: "Выберите драйвер, который будет использоваться для ЧПУ (человекопонятный URL)."
+      slug_driver_heading: "Драйвер: {model}"
+      slug_driver_text: "Выберите драйвер, который будет использоваться при создании семантических путей (URL) для этой модели"
       submit_button: => core.ref.save_changes
       title: "Основные настройки"
       welcome_banner_heading: "Баннер приветствия"
@@ -138,7 +138,7 @@ core:
 
     # These translations are used in the session secondary header.
     header:
-      get_help: Помощь
+      get_help: "Помощь"
       log_out_button: => core.ref.log_out
 
     # These translations are used in the modal dialog displayed when loading extensions.
@@ -155,12 +155,12 @@ core:
         authentication: "Авторизация"
         core: "Форум"
         discussion: "Общение"
-        feature: "Улучшения"
+        feature: "Улучшение"
         formatting: "Форматирование"
-        language: "Языки"
+        language: "Язык"
         moderation: "Модерация"
         other: "Прочее"
-        theme: "Стили"
+        theme: "Стиль"
       dashboard_button: => core.admin.dashboard.title
       dashboard_title: => core.admin.dashboard.description
       email_button: => core.ref.email
@@ -177,7 +177,7 @@ core:
       delete_discussions_forever_label: "Удаление тем (физически)"
       delete_discussions_label: "Удаление темы"
       delete_posts_forever_label: "Удаление сообщений (физически)"
-      delete_posts_label: "Удаление сообщения"
+      delete_posts_label: "Удаление сообщений"
       description: "Настройка прав групп пользователей."
       edit_posts_label: "Редактирование сообщений"
       edit_users_label: "Редактирование пользователей"
@@ -185,7 +185,7 @@ core:
       moderate_heading: "Модерация"
       new_group_button: "Новая группа"
       participate_heading: "Участие"
-      post_without_throttle_label: "Ответ несколько раз без ожидания"
+      post_without_throttle_label: "Ответ без ожидания"
       read_heading: "Чтение"
       rename_discussions_label: "Переименовывание темы"
       reply_to_discussions_label: "Ответ в теме"
@@ -195,7 +195,7 @@ core:
       view_discussions_label: "Чтение темы"
       view_hidden_groups_label: "Просмотр скрытых групп"
       view_last_seen_at_label: "Просмотр времени последнего посещения"
-      view_post_ips_label: "Просмотр IP-адресов"
+      view_post_ips_label: "Просмотр IP адресов"
       view_user_list_label: "Просмотр списка пользователей"
 
     # These translations are used in the dropdown menus on the Permissions page.
@@ -226,14 +226,14 @@ core:
       confirm_password_placeholder: => core.ref.confirm_password
       confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
-      incorrect_password_message: "Введённый пароль неверный."
+      incorrect_password_message: "Введённый пароль некорректный."
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: "Отправить пароль на email"
-      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Ваш email."
+      send_button: "Отправить пароль на электронную почту"
+      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Вашу электроннную почту."
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
@@ -255,7 +255,7 @@ core:
     # These translations are used by the composer when editing a post.
     composer_edit:
       discard_confirmation: "Вами не были сохранены изменения. Хотите отказаться от них?"
-      edited_message: Your edit was made.
+      edited_message: "Ваши изменения сохранены"
       post_link: "Сообщение #{number} в {discussion}"
       submit_button: => core.ref.save_changes
       view_button: => core.ref.view
@@ -271,7 +271,7 @@ core:
     # These translations are used by the discussion control buttons.
     discussion_controls:
       cannot_reply_button: "Нельзя ответить"
-      cannot_reply_text: "У вас нет прав доступа для публикации ответа в этой теме."
+      cannot_reply_text: "У вас нет прав для публикации ответа в этой теме."
       delete_button: => core.ref.delete
       delete_confirmation: "Точно хотите удалить тему?"
       delete_forever_button: => core.ref.delete_forever
@@ -285,8 +285,8 @@ core:
       empty_text: "Кажется, здесь нет тем. Почему бы Вам не создать новую?"
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: "Отметить как прочитанное"
-      replied_text: "{username} ответил {ago}"
-      started_text: "{username} создал {ago}"
+      replied_text: "{username} ответил(а) {ago}"
+      started_text: "{username} создал(а) {ago}"
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
@@ -306,10 +306,10 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если не получил письмо в течение нескольких минут."
-      not_found_message: "Указанный адрес email не найден."
+      email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если не получили письмо в течение нескольких минут."
+      not_found_message: "Указанная электронная почта не найдена."
       submit_button: "Восстановить пароль"
-      text: "Введи свой email, и мы вышлем Вам ссылку для сброса пароля."
+      text: "Введи свою электронную почту и мы отправим Вам ссылку для сброса пароля."
       title: "Забыли пароль?"
 
     # These translations are used in the header and session dropdown menu.
@@ -327,7 +327,7 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: "Нельзя создать"
-      mark_all_as_read_confirmation: "Вы уверене, что хотите отметить все темы как прочитанные?"
+      mark_all_as_read_confirmation: "Вы уверены, что хотите отметить все темы как прочитанные?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       meta_title_text: => core.ref.all_discussions
       mark_as_read_tooltip: "Отметить как прочитанное"
@@ -345,7 +345,7 @@ core:
     # These translations are used in the Log In modal dialog.
     log_in:
       forgot_password_link: "Забыли пароль?"
-      invalid_login_message: "Ваши учетные данные для входа неверны."
+      invalid_login_message: "Ваши учётные данные для входа некорректны."
       password_placeholder: => core.ref.password
       remember_me_label: "Запомнить меня"
       sign_up_text: "У Вас ещё нет учётной записи?  <a>Зарегистрируйтесь</a>"
@@ -355,7 +355,7 @@ core:
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} изменил название темы."
+      discussion_renamed_text: "{username} изменил(а) название темы."
       empty_text: "Оповещения отсутствуют"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
@@ -364,7 +364,7 @@ core:
     # These translations are used by tooltips displayed for individual posts.
     post:
       edited_text: "Изменено"
-      edited_tooltip: "{username} отредактировал {ago}"
+      edited_tooltip: "{username} отредактировал(а) {ago}"
       number_tooltip: "Сообщение #{number}"
 
     # These translations are used by the post control buttons.
@@ -386,7 +386,7 @@ core:
     # These translations are displayed between posts in the post stream.
     post_stream:
       discussion_renamed_old_tooltip: 'Старое название: "{old}"'
-      discussion_renamed_text: '{username} изменил название с "{old}" на "{new}".'
+      discussion_renamed_text: '{username} изменил(а) название с "{old}" на "{new}".'
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} спустя"
@@ -409,7 +409,7 @@ core:
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
-      notify_by_web_heading: "Веб"
+      notify_by_web_heading: "На форуме"
       notify_discussion_renamed_label: "Переименовывание моей темы"
       privacy_disclose_online_label: "Показывать онлайн статус"
       privacy_heading: "Конфиденциальность"
@@ -424,7 +424,7 @@ core:
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "Привет, {username}!"
+      welcome_text: "Здравствуйте, {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
@@ -434,7 +434,7 @@ core:
       discussions_link: => core.ref.discussions
       in_discussion_text: 'в "{discussion}"'
       joined_date_text: "Регистрация: {ago}"
-      online_text: "В сети"
+      online_text: "Онлайн"
       posts_empty_text: "Сообщения отсутствуют."
       posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
@@ -444,7 +444,7 @@ core:
     user_controls:
       button: "Управление"
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Все сообщения пользователя также будут удалены."
+      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Сообщения пользователя не будут удалены."
       delete_error_message: "Не удалось удалить пользователя <i>{username} ({email})</i>"
       delete_success_message: "Пользователь <i>{username} ({email})</i> удалён"
       edit_button: => core.ref.edit
@@ -452,7 +452,7 @@ core:
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
       alert_message: => core.ref.confirmation_email_sent
-      resend_button: "Повторно отправить подтверждение по email"
+      resend_button: "Повторно отправить подтверждение на электронную почту"
       sent_message: "Отправлено"
 
   # Translations in this namespace are used by the forum and admin interfaces.
@@ -468,7 +468,7 @@ core:
       generic_message: "Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз."
       missing_dependencies_message: "Нельзя включить {extension} пока не будут включены следующие зависимости: {extensions}"
       not_found_message: "Запрашиваемый ресурс не найден."
-      permission_denied_message: "У вас нет прав доступа для выполнения этого действия."
+      permission_denied_message: "У вас нет прав для выполнения этого действия."
       rate_limit_exceeded_message: "Вы публикуете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд."
 
     # These translations are used as suffixes when abbreviating numbers.
@@ -532,7 +532,7 @@ core:
 
   # Translations in this namespace are used in messages output by the API.
   api:
-    invalid_username_message: "Имя пользователя может содержать только буквы, цифры, и тире."
+    invalid_username_message: "Имя пользователя может содержать только буквы, цифры и тире."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
@@ -541,24 +541,24 @@ core:
     activate_account:
       subject: "Активация Вашего аккаунта"
       body: |
-        Привет, {username}!
+        Здравствуйте, {username}!
 
-        Кто-то (надеемся, что Вы!) зарегистрировался на форуме {forum} с этим адресом электронной почты.
+        Кто-то зарегистрировался на форуме {forum} с этим адресом электронной почты.
 
-        Если это были Вы, просто нажмите на ссылку и Ваш аккаунт будет активирован:
+        Если это были Вы, то нажмите на ссылку и Ваш аккаунт будет активирован:
         {url}
 
         Если Вы не регистрировались, пожалуйста, проигнорируйте это сообщение.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
-      subject: "Подтверждение нового адреса email"
+      subject: "Подтверждение нового адреса электронной почты"
       body: |
-        Привет, {username},
+        Здравствуйте, {username}!
 
-        Кто-то (надеемся, что Вы!) изменил адрес электронной почты на форуме {forum}.
+        Кто-то изменил Ваш адрес электронной почты на форуме {forum}.
 
-        Если это были Вы, просто нажмите на ссылку и Ваш адрес электронной почты будет подтверждён:
+        Если это были Вы, то нажмите на ссылку и Ваш адрес электронной почты будет подтверждён:
         {url}
 
         Если это не Вы, пожалуйста, проигнорируйте это сообщение.
@@ -567,22 +567,22 @@ core:
     reset_password:
       subject: => core.ref.reset_your_password
       body: |
-        Привет, {username},
+        Здравствуйте, {username}!
 
-        Кто-то (надеемся, что Вы!) подал запрос на сброс пароля для Вашего аккаунта на форуме {forum}.
+        Кто-то подал запрос на сброс пароля для Вашего аккаунта на форуме {forum}.
 
         Если это были Вы, нажмите на ссылку для сброса пароля:
         {url}
 
-        Если Вы не хотите менять свой пароль, просто проигнорируйте это сообщение и ничего не произойдёт.
+        Если Вы не хотите менять свой пароль, то проигнорируйте это сообщение.
 
     # These translations are used when testing mailing configuration
     send_test:
-      subject: Flarum Email Test
+      subject: Тестовое письмо 
       body: |
-        Привет {username},
+        Здравствуйте, {username}!
         
-        Это тестовое сообщение, чтобы подтвердить, что Ваша конфигурация электронной почты на форуме работает должным образом.
+        Это тестовое сообщение предназначено для того, чтобы подтвердить, что Ваша конфигурация электронной почты на форуме работает правильно.
         
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -591,7 +591,7 @@ core:
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
     all_discussions: "Все темы"
-    change_email: "Изменить email"
+    change_email: "Изменить электронную почту"
     change_password: "Изменить пароль"
     color: "Цвет"                                   # Referenced by flarum-tags.yml
     confirm_password: "Подтвердите пароль"
@@ -604,7 +604,7 @@ core:
     delete_forever: "Удалить (физ.)"
     discussions: "Темы"                        # Referenced by flarum-statistics.yml
     edit: "Редактировать"
-    email: "Электронная почта"
+    email: "По email"
     icon: "Иконка"
     icon_text: "Введите название любого класса иконки <a>Font Awesome</a>, <em>без</em> префикса <code>fa-</code>."
     load_more: "Загрузить ещё"
@@ -625,13 +625,13 @@ core:
     save_changes: "Сохранить"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: "Настройки"
     sign_up: "Регистрация"
-    some_others: "{count} другому|{count} других"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count} другому|{count} другим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: "Создать тему"
     username: "Имя пользователя"
     users: "Пользователи"                           # Referenced by flarum-statistics.yml
     view: "Просмотр"
     write_a_reply: "Напишите свой ответ..."
-    you: "Вы"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
+    you: "Вам"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.
