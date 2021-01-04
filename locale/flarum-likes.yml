@@ -23,7 +23,7 @@ flarum-likes:
     post:
       like_link: "Мне нравится"
       liked_by_self_text: "{users} лайкнули это"  # Can be pluralized to agree with the number of users!
-      liked_by_text: "{users} лайкнули это|{users} лайкнули это"
+      liked_by_text: "{users} нравится это|{users} нравится это"
       others_link: => core.ref.some_others
       unlike_link: "Больше не нравится"
       you_text: => core.ref.you
