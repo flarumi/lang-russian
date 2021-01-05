@@ -56,7 +56,7 @@ flarum-subscriptions:
       body: |
         Здравствуйте, {recipient_display_name}!
         
-        Пользователь {poster_display_name} ответил(а) сообщение в отслеживаемой Вами теме: {title}.
+        Пользователь {poster_display_name} ответил(а) в отслеживаемой Вами теме: {title}.
         
         Подробнее тут:
         {url}
