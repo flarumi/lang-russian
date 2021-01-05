@@ -69,7 +69,7 @@ flarum-tags:
       choose_secondary_placeholder: "Выберите больше 1 тега|Выберите больше {count} тегов"
       edit_title: "Настройка тегов: {title}"
       submit_button: => core.ref.okay
-      title: "Укажите теги для своей темы"
+      title: "Выберите теги для своей темы"
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -90,9 +90,9 @@ flarum-tags:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_and_removed_tags_text: "{username} добавил {tagsAdded} и удалил {tagsRemoved}"
-      added_tags_text: "{username} добавил {tagsAdded}"
-      removed_tags_text: "{username} удалил {tagsRemoved}"
+      added_and_removed_tags_text: "{username} добавил(а) {tagsAdded} и удалил(а) {tagsRemoved}"
+      added_tags_text: "{username} добавил(а) {tagsAdded}"
+      removed_tags_text: "{username} удалил(а) {tagsRemoved}"
       tags_text: "тег {tags}|теги {tags}"
       
     # These translations are used when visiting a single tag's discussion list.
