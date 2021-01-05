@@ -24,7 +24,7 @@ flarum-tags:
       name_placeholder: => flarum-tags.ref.name
       slug_label: "Путь"
       submit_button: => core.ref.save_changes
-      title: Создать тег
+      title: "Создать тег"
 
     # These translations are used in the navigation bar.
     nav:
@@ -33,9 +33,9 @@ flarum-tags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_edit_tags_label: "Редактирование тегов"
+      allow_edit_tags_label: "Изменение тегов"
       restrict_by_tag_heading: "По тегу"
-      tag_discussions_label: "Редактирование тегов темы"
+      tag_discussions_label: "Изменение тегов темы"
 
     # These translations are used in the Tag Settings modal dialog.
     tag_settings:
@@ -49,11 +49,11 @@ flarum-tags:
     # These translations are used in the Tags page.
     tags:
       about_tags_text: "Теги используются для структурирования тем. Основные теги могут представлять собой двухуровневую иерархию. Дополнительные теги не имеют иерархии и могут быть полезны для микро-структурирования. Теги из дополнительных в основные можно конвертировать путём простого перетаскивания мышкой."
-      create_primary_tag_button: Создать основной тег
-      create_secondary_tag_button: Создать дополнительный тег
+      create_primary_tag_button: "Создать основной тег"
+      create_secondary_tag_button: "Создать дополнительный тег"
       primary_heading: "Основные"
       secondary_heading: "Дополнительные"
-      settings_heading: Настройки
+      settings_heading: "Настройки"
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -77,7 +77,7 @@ flarum-tags:
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: "Редактировать теги"
+      edit_tags_button: "Изменить теги"
 
     header:
       back_to_tags_tooltip: "Вернуться к списку тегов"
