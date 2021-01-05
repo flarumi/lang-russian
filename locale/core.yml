@@ -54,7 +54,7 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      clear_cache_button: "Очистить кэш"
+      clear_cache_button: "Очистить кеш"
       description: "Ваш форум с первого взгляда."
       title: "Консоль"
       tools_button: "Инструменты"
@@ -246,11 +246,11 @@ core:
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: "Написать сообщение..."
-      discard_confirmation: "Вами не была создана тему. Хотите отменить тему?"
-      submit_button: "Отправить"
+      body_placeholder: "Напишите сообщение..."
+      discard_confirmation: "Вами не была создана тема. Хотите отменить это действие?"
+      submit_button: "Создать тему"
       title: => core.ref.start_a_discussion
-      title_placeholder: "Название темы"
+      title_placeholder: "Заголовок темы"
 
     # These translations are used by the composer when editing a post.
     composer_edit:
@@ -265,7 +265,7 @@ core:
       body_placeholder: => core.ref.write_a_reply
       discard_confirmation: "Вами не был отправлен ответ. Хотите отменить сообщение?"
       posted_message: "Ваш ответ опубликован"
-      submit_button: "Отправить"
+      submit_button: "Ответить"
       view_button: => core.ref.view
 
     # These translations are used by the discussion control buttons.
@@ -318,7 +318,7 @@ core:
       back_to_index_tooltip: "Вернуться к списку тем"
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: "Мой профиль"
+      profile_button: "Аккаунт"
       search_placeholder: "Поиск..."
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
@@ -355,7 +355,7 @@ core:
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} изменил(а) название темы."
+      discussion_renamed_text: "{username} изменил(а) заголовок темы."
       empty_text: "Оповещения отсутствуют"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
@@ -385,8 +385,8 @@ core:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_old_tooltip: 'Старое название: "{old}"'
-      discussion_renamed_text: '{username} изменил(а) название с "{old}" на "{new}".'
+      discussion_renamed_old_tooltip: 'Старый заголовок: "{old}"'
+      discussion_renamed_text: '{username} изменил(а) заголовок с "{old}" на "{new}"'
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} спустя"
@@ -409,9 +409,9 @@ core:
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
-      notify_by_web_heading: "На форуме"
+      notify_by_web_heading: "Форум"
       notify_discussion_renamed_label: "Переименовывание моей темы"
-      privacy_disclose_online_label: "Показывать онлайн статус"
+      privacy_disclose_online_label: "Показывать статус «Онлайн»"
       privacy_heading: "Конфиденциальность"
       title: => core.ref.settings
 
@@ -604,7 +604,7 @@ core:
     delete_forever: "Удалить (физ.)"
     discussions: "Темы"                        # Referenced by flarum-statistics.yml
     edit: "Редактировать"
-    email: "По email"
+    email: "Email"
     icon: "Иконка"
     icon_text: "Введите название любого класса иконки <a>Font Awesome</a>, <em>без</em> префикса <code>fa-</code>."
     load_more: "Загрузить ещё"
