@@ -364,7 +364,7 @@ core:
     # These translations are used by tooltips displayed for individual posts.
     post:
       edited_text: "Изменено"
-      edited_tooltip: "{username} отредактировал(а) {ago}"
+      edited_tooltip: "{username} изменил(а) {ago}"
       number_tooltip: "Сообщение #{number}"
 
     # These translations are used by the post control buttons.
