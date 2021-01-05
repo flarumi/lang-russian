@@ -10,8 +10,8 @@ core:
     # These translations are used in the Appearance page.
     appearance:
       colored_header_label: "Цветная шапка"
-      colors_heading: "Цвета"
-      colors_text: "Выберите два цвета для стилизации форума. Первый будет использоваться в качестве цвета подсветки, второй будет использоваться в качестве фона стилевых элементов."
+      colors_heading: "Цвет"
+      colors_text: "Выберите два цвета для стилизации форума. Первый будет использоваться в качестве цвета подсветки, а второй в качестве фона стилевых элементов."
       custom_footer_heading: "Нижний колонтитул"
       custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: "Верхний колонтитул"
@@ -20,14 +20,14 @@ core:
       custom_styles_text: "Настройка внешнего вида форума при помощи пользовательского кода LESS/CSS, который переопределяет стандартные стилевые конструкции Flarum."
       dark_mode_label: "Тёмный режим"
       description: "Настройка внешнего вида форума и стилевых элементов."
-      edit_css_button: "Редактировать CSS"
+      edit_css_button: "Изменить CSS"
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
-      enter_hex_message: "Пожалуйста, введите код цвета в HEX-формате."
+      enter_hex_message: "Пожалуйста, введите код цвета в формате HEX."
       favicon_heading: "Favicon"
-      favicon_text: "Загрузка изображения, которое будет отображаться в качестве значка форума."
+      favicon_text: "Загрузите изображение, которое будет отображаться в качестве значка форума."
       logo_heading: "Логотип"
-      logo_text: "Загрузка изображения, которое будет отображаться вместо заголовка форума."
+      logo_text: "Загрузите изображение, которое будет отображаться вместо заголовка форума."
       submit_button: => core.ref.save_changes
       title: "Внешний вид"
 
@@ -39,11 +39,11 @@ core:
       display_name_heading: "Отображаемое имя"
       display_name_text: "Выберите драйвер, который будет использоваться для отображаемых имен. По умолчанию отображается имя пользователя."
       forum_description_heading: "Описание форума"
-      forum_description_text: "Введите краткое описание сообщества. Описание появится в meta-теге и будет отображаться в поисковых системах."
+      forum_description_text: "Введите краткое описание форума. Описание появится в meta-теге и будет отображаться в поисковых системах."
       forum_title_heading: "Название форума"
       home_page_heading: "Главная страница"
-      home_page_text: "Выберите страницу, которую пользователи будут видеть при посещении форума. При вводе пользовательских значений, используйте путь относительно корня форума."
-      saved_message: "Изменения сохранены."
+      home_page_text: "Выберите страницу, которая будет отображаться пользователям при посещении форума."
+      saved_message: "Ваши изменения сохранены."
       show_language_selector_label: "Отображать переключатель языка"
       slug_driver_heading: "Драйвер: {model}"
       slug_driver_text: "Выберите драйвер, который будет использоваться при создании семантических путей (URL) для этой модели"
@@ -63,7 +63,7 @@ core:
     edit_css:
       customize_text: "Настройка внешнего вида форума при помощи пользовательского кода LESS/CSS, который переопределяет <a>стандартные стилевые конструкции</a> Flarum."
       submit_button: => core.ref.save_changes
-      title: "Редактирование CSS"
+      title: "Изменение CSS"
 
     # These translations are used in the Edit Custom Footer modal dialog.
     edit_footer:
@@ -171,13 +171,13 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_post_editing_label: "Редактирование сообщений"
-      allow_renaming_label: "Переименование тем"
+      allow_post_editing_label: "Изменение сообщения"
+      allow_renaming_label: "Переименование темы"
       create_heading: "Создание"
-      delete_discussions_forever_label: "Удаление тем (физически)"
+      delete_discussions_forever_label: "Удаление темы (физически)"
       delete_discussions_label: "Удаление темы"
-      delete_posts_forever_label: "Удаление сообщений (физически)"
-      delete_posts_label: "Удаление сообщений"
+      delete_posts_forever_label: "Удаление сообщения (физически)"
+      delete_posts_label: "Удаление сообщения"
       description: "Настройка прав групп пользователей."
       edit_posts_label: "Редактирование сообщений"
       edit_users_label: "Редактирование пользователей"
@@ -192,7 +192,7 @@ core:
       sign_up_label: "Регистрация"
       start_discussions_label: "Создание темы"
       title: "Права"
-      view_discussions_label: "Чтение темы"
+      view_discussions_label: "Просмотр темы"
       view_hidden_groups_label: "Просмотр скрытых групп"
       view_last_seen_at_label: "Просмотр времени последнего посещения"
       view_post_ips_label: "Просмотр IP адресов"
@@ -226,7 +226,7 @@ core:
       confirm_password_placeholder: => core.ref.confirm_password
       confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
-      incorrect_password_message: "Введённый пароль некорректный."
+      incorrect_password_message: "Некорректный пароль."
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
@@ -254,7 +254,7 @@ core:
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "Вами не были сохранены изменения. Хотите отказаться от них?"
+      discard_confirmation: "Вами не были сохранены изменения. Хотите отменить их?"
       edited_message: "Ваши изменения сохранены"
       post_link: "Сообщение #{number} в {discussion}"
       submit_button: => core.ref.save_changes
@@ -263,7 +263,7 @@ core:
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Вами не был отправлен ответ. Хотите отменить сообщение?"
+      discard_confirmation: "Вами не был отправлен ответ. Хотите отменить это действие?"
       posted_message: "Ваш ответ опубликован"
       submit_button: "Ответить"
       view_button: => core.ref.view
@@ -273,7 +273,7 @@ core:
       cannot_reply_button: "Нельзя ответить"
       cannot_reply_text: "У вас нет прав для публикации ответа в этой теме."
       delete_button: => core.ref.delete
-      delete_confirmation: "Точно хотите удалить тему?"
+      delete_confirmation: "Вы хотите удалить тему?"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: "Войти"
       rename_button: => core.ref.rename
@@ -394,7 +394,7 @@ core:
     # These translations are used by the rename discussion modal.
     rename_discussion:
       submit_button: => core.ref.rename
-      title: "Переименовать тему"
+      title: "Изменить заголовок"
 
     # These translations are used by the search results dropdown list.
     search:
@@ -411,7 +411,7 @@ core:
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: "Форум"
       notify_discussion_renamed_label: "Переименовывание моей темы"
-      privacy_disclose_online_label: "Показывать статус «Онлайн»"
+      privacy_disclose_online_label: "Показывать статус онлайн"
       privacy_heading: "Конфиденциальность"
       title: => core.ref.settings
 
@@ -464,9 +464,9 @@ core:
 
     # These translations are displayed as error messages.
     error:
-      dependent_extensions_message: "Нельзя отключить {extension} пока не будут отключены следующие зависимые расширения: {extensions}"
+      dependent_extensions_message: "Нельзя отключить {extension}, пока не будет отключено: {extensions}"
       generic_message: "Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз."
-      missing_dependencies_message: "Нельзя включить {extension} пока не будут включены следующие зависимости: {extensions}"
+      missing_dependencies_message: "Нельзя включить {extension}, пока не будет включено: {extensions}"
       not_found_message: "Запрашиваемый ресурс не найден."
       permission_denied_message: "У вас нет прав для выполнения этого действия."
       rate_limit_exceeded_message: "Вы публикуете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд."
@@ -543,9 +543,9 @@ core:
       body: |
         Здравствуйте, {username}!
 
-        Кто-то зарегистрировался на форуме {forum} с этим адресом электронной почты.
+        Вы зарегистрировались на форуме {forum} с этим адресом электронной почты.
 
-        Если это были Вы, то нажмите на ссылку и Ваш аккаунт будет активирован:
+        Если это Вы, то нажмите на ссылку и Ваш аккаунт будет активирован:
         {url}
 
         Если Вы не регистрировались, пожалуйста, проигнорируйте это сообщение.
@@ -556,12 +556,12 @@ core:
       body: |
         Здравствуйте, {username}!
 
-        Кто-то изменил Ваш адрес электронной почты на форуме {forum}.
+        Ваш адрес электронной почты на форуме {forum} был изменён.
 
-        Если это были Вы, то нажмите на ссылку и Ваш адрес электронной почты будет подтверждён:
+        Если это Вы, то нажмите на ссылку и Ваш адрес электронной почты будет подтверждён:
         {url}
 
-        Если это не Вы, пожалуйста, проигнорируйте это сообщение.
+        Если Вы не изменяли, пожалуйста, проигнорируйте это сообщение.
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
@@ -569,9 +569,9 @@ core:
       body: |
         Здравствуйте, {username}!
 
-        Кто-то подал запрос на сброс пароля для Вашего аккаунта на форуме {forum}.
+        Вы сделали запрос на сброс пароля для Вашего аккаунта на форуме {forum}.
 
-        Если это были Вы, нажмите на ссылку для сброса пароля:
+        Если это Вы, то нажмите на ссылку для сброса пароля:
         {url}
 
         Если Вы не хотите менять свой пароль, то проигнорируйте это сообщение.
@@ -595,15 +595,15 @@ core:
     change_password: "Изменить пароль"
     color: "Цвет"                                   # Referenced by flarum-tags.yml
     confirm_password: "Подтвердите пароль"
-    confirmation_email_sent: "Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
+    confirmation_email_sent: "Мы отправили письмо с подтверждением на {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
     custom_footer_text: "Специальный HTML, который будет отображаться в самой нижней части страницы."
-    custom_footer_title: "Редактировать нижний колонтитул"
+    custom_footer_title: "Изменить нижний колонтитул"
     custom_header_text: "Специальный HTML, который будет отображаться в самой верхней части страницы, над заголовком Flarum."
-    custom_header_title: "Редактировать верхний колонтитул"
+    custom_header_title: "Изменить верхний колонтитул"
     delete: "Удалить"
     delete_forever: "Удалить (физ.)"
     discussions: "Темы"                        # Referenced by flarum-statistics.yml
-    edit: "Редактировать"
+    edit: "Изменить"
     email: "Email"
     icon: "Иконка"
     icon_text: "Введите название любого класса иконки <a>Font Awesome</a>, <em>без</em> префикса <code>fa-</code>."
@@ -618,7 +618,7 @@ core:
     posts: "Сообщения"                              # Referenced by flarum-statistics.yml
     previous_page: "Предыдущая страница"
     remove: "Удалить"
-    rename: "Переименовать"
+    rename: "Изменить"
     reply: "Ответить"                               # Referenced by flarum-mentions.yml
     reset_your_password: "Сбросить пароль"
     restore: "Восстановить"
