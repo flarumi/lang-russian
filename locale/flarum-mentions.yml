@@ -43,7 +43,7 @@ flarum-mentions:
     post_mentioned:
       subject: "{replier_display_name} ответил(а) на Ваше сообщение"
       body: |
-        Здравствуйте,{recipient_display_name}!
+        Здравствуйте, {recipient_display_name}!
         
         Пользователь {replier_display_name} ответил(а) на Ваше сообщение #{post_number} в теме: {title}.
         
@@ -54,11 +54,11 @@ flarum-mentions:
         {content}
     # These translations are used in emails sent when a user is mentioned
     user_mentioned:
-      subject: "{mentioner_display_name} упомянул(а) Вас в теме"
+      subject: "{mentioner_display_name} упомянул(а) Вас в сообщении"
       body: |
         Здравствуйте, {recipient_display_name}!
         
-        Пользователь {mentioner_display_name} упомянул(а) Вас в сообщении темы: {title}.
+        Пользователь {mentioner_display_name} упомянул(а) Вас в своём сообщении в теме: {title}.
         
         Подробнее тут: {url}
         
