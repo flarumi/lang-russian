@@ -44,7 +44,7 @@ core:
       home_page_heading: "Главная страница"
       home_page_text: "Выберите страницу, которая будет отображаться пользователям при посещении форума."
       saved_message: "Ваши изменения сохранены."
-      show_language_selector_label: "Отображать переключатель языка"
+      show_language_selector_label: "Показывать переключатель языка"
       slug_driver_heading: "Драйвер: {model}"
       slug_driver_text: "Выберите драйвер, который будет использоваться при создании семантических путей (URL) для этой модели"
       submit_button: => core.ref.save_changes
@@ -80,8 +80,8 @@ core:
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: "Название"
-      plural_placeholder: "Множественное число (т.е. модеры)"
-      singular_placeholder: "Единственное число (т.е. модер)"
+      plural_placeholder: "Множественное число"
+      singular_placeholder: "Единственное число"
       submit_button: => core.ref.save_changes
       title: "Создание группы"
 
@@ -118,10 +118,10 @@ core:
 
     # These translations are used on default extension pages.
     extension:
-      confirm_uninstall: "Данное действие удалит все записи в базе данных и ресурсы, связанные с расширением. Вы уверены, что хотите продолжить?"
+      confirm_uninstall: "Данное действие удалит все записи в базе данных и ресурсы, связанные с расширением. Вы уверены, что хотите удалить?"
       disabled: "Отключено"
       enabled: "Включено"
-      enable_to_see: "Включите расширение для просмотра и изменения настроек."
+      enable_to_see: "Включите расширение для его просмотра и изменения настроек."
       info_links:
         discuss: "Обсудить"
         documentation: "Документация"
@@ -174,9 +174,9 @@ core:
       allow_post_editing_label: "Изменение сообщения"
       allow_renaming_label: "Переименование темы"
       create_heading: "Создание"
-      delete_discussions_forever_label: "Удаление темы (физически)"
+      delete_discussions_forever_label: "Физическое удаление тем"
       delete_discussions_label: "Удаление темы"
-      delete_posts_forever_label: "Удаление сообщения (физически)"
+      delete_posts_forever_label: "Физическое удаление сообщений"
       delete_posts_label: "Удаление сообщения"
       description: "Настройка прав групп пользователей."
       edit_posts_label: "Редактирование сообщений"
@@ -263,15 +263,15 @@ core:
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Вами не был отправлен ответ. Хотите отменить это действие?"
-      posted_message: "Ваш ответ опубликован"
+      discard_confirmation: "Вами не было отправлено сообщение. Хотите отменить это действие?"
+      posted_message: "Ваше сообщение опубликовано"
       submit_button: "Ответить"
       view_button: => core.ref.view
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
       cannot_reply_button: "Нельзя ответить"
-      cannot_reply_text: "У вас нет прав для публикации ответа в этой теме."
+      cannot_reply_text: "У вас нет прав для публикации сообщения в этой теме."
       delete_button: => core.ref.delete
       delete_confirmation: "Вы хотите удалить тему?"
       delete_forever_button: => core.ref.delete_forever
@@ -296,7 +296,7 @@ core:
       groups_heading: "Группы"
       password_heading: => core.ref.password
       password_label: => core.ref.password
-      set_password_label: "Установить новый пароль"
+      set_password_label: "Изменить пароль"
       submit_button: => core.ref.save_changes
       title: "Изменить пользователя"
       username_heading: => core.ref.username
@@ -370,7 +370,7 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить сообщение навсегда? Это действие невозможно отменить."
+      delete_confirmation: "Вы уверены, что хотите удалить сообщение полностью? Это действие невозможно отменить."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
       hide_confirmation: "Вы уверены, что хотите удалить сообщение?"
@@ -411,7 +411,7 @@ core:
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: "Форум"
       notify_discussion_renamed_label: "Переименовывание моей темы"
-      privacy_disclose_online_label: "Показывать статус онлайн"
+      privacy_disclose_online_label: "Показывать Ваш онлайн статус"
       privacy_heading: "Конфиденциальность"
       title: => core.ref.settings
 
@@ -467,9 +467,9 @@ core:
       dependent_extensions_message: "Нельзя отключить {extension}, пока не будет отключено: {extensions}"
       generic_message: "Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз."
       missing_dependencies_message: "Нельзя включить {extension}, пока не будет включено: {extensions}"
-      not_found_message: "Запрашиваемый ресурс не найден."
+      not_found_message: "Запрашиваемая страница не найдена."
       permission_denied_message: "У вас нет прав для выполнения этого действия."
-      rate_limit_exceeded_message: "Вы публикуете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд."
+      rate_limit_exceeded_message: "Вы отправляете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд."
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -492,7 +492,7 @@ core:
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
       javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
-      load_error_message: "Что-то пошло не так при попытке загрузки полной версии сайта."
+      load_error_message: "Произошла ошибка при попытке загрузить сайт."
       loading_text: "Загрузка..."
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
@@ -520,7 +520,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "Вы уверены, что хотите выйти из {forum}?"
+      log_out_confirmation: "Вы уверены, что хотите выйти из аккаунта?"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
@@ -558,7 +558,7 @@ core:
 
         Ваш адрес электронной почты на форуме {forum} был изменён.
 
-        Если это Вы, то нажмите на ссылку ниже для подтверждения изменения электронной почты:
+        Если это Вы, то нажмите на ссылку ниже для подтверждения изменения адреса электронной почты:
         {url}
 
         Если Вы не изменяли, пожалуйста, проигнорируйте это сообщение.
@@ -582,7 +582,7 @@ core:
       body: |
         Здравствуйте, {username}!
         
-        Это тестовое сообщение предназначено для того, чтобы подтвердить, что Ваша конфигурация электронной почты на форуме работает правильно.
+        Это тестовое сообщение предназначено для того, чтобы подтвердить, что Ваша конфигурация электронной почты на форуме настроена правильно.
         
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -595,13 +595,13 @@ core:
     change_password: "Изменить пароль"
     color: "Цвет"                                   # Referenced by flarum-tags.yml
     confirm_password: "Введите пароль"
-    confirmation_email_sent: "Мы отправили письмо с подтверждением на {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
-    custom_footer_text: "Специальный HTML, который будет отображаться в самой нижней части страницы."
-    custom_footer_title: "Изменить нижний колонтитул"
-    custom_header_text: "Специальный HTML, который будет отображаться в самой верхней части страницы, над заголовком Flarum."
-    custom_header_title: "Изменить верхний колонтитул"
+    confirmation_email_sent: "Мы отправили письмо с подтверждением на {email}. Если Вы не получите письмо в ближайшее время, то проверьте папку со спамом."
+    custom_footer_text: "HTML код, который будет отображаться в низу страницы."
+    custom_footer_title: "Изменить футер"
+    custom_header_text: "HTML код, который будет отображаться в верху страницы, над заголовком Flarum."
+    custom_header_title: "Изменить шапку"
     delete: "Удалить"
-    delete_forever: "Удалить (физ.)"
+    delete_forever: "Удалить полностью"
     discussions: "Темы"                        # Referenced by flarum-statistics.yml
     edit: "Изменить"
     email: "Email"
