@@ -35,7 +35,7 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: "Язык по умолчанию"
-      description: "Изменение названия форума, языка и прочих настроек форума."
+      description: "Изменение названия форума, языка и прочих настроек."
       display_name_heading: "Отображаемое имя"
       display_name_text: "Выберите драйвер, который будет использоваться для отображаемых имен. По умолчанию отображается имя пользователя."
       forum_description_heading: "Описание форума"
@@ -94,7 +94,7 @@ core:
     # These translations are used in the email page of the admin interface.
     email:
       addresses_heading: "Адрес"
-      description: "Настройка электронный почты для отправки писем."
+      description: "Настройка электронный почты для отправки писем с форума."
       driver_heading: "Выберите драйвер"
       driver_label: "Драйвер"
       from_label: "Отправитель"
@@ -232,8 +232,8 @@ core:
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: "Отправить пароль на электронную почту"
-      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Вашу электроннную почту."
+      send_button: "Отправить пароль"
+      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на электроннную почту."
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
@@ -282,7 +282,7 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "Кажется, здесь нет тем. Почему бы Вам не создать новую?"
+      empty_text: "Пока здесь нет ни одной темы."
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: "Отметить как прочитанное"
       replied_text: "{username} ответил(а) {ago}"
@@ -307,7 +307,7 @@ core:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
       email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если не получили письмо в течение нескольких минут."
-      not_found_message: "Указанная электронная почта не найдена."
+      not_found_message: "Пользователей с указанной электронной почтой не найдено."
       submit_button: "Восстановить пароль"
       text: "Введи свою электронную почту и мы отправим Вам ссылку для сброса пароля."
       title: "Забыли пароль?"
@@ -348,7 +348,7 @@ core:
       invalid_login_message: "Ваши учётные данные для входа некорректны."
       password_placeholder: => core.ref.password
       remember_me_label: "Запомнить меня"
-      sign_up_text: "У Вас ещё нет учётной записи?  <a>Зарегистрируйтесь</a>"
+      sign_up_text: "У Вас ещё нет учётной записи? <a>Зарегистрируйтесь</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
       username_or_email_placeholder: "Имя пользователя или email"
@@ -381,7 +381,7 @@ core:
       now_link: "Новое"
       original_post_link: "Старое"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщений|{index} из {count} сообщений"
+      viewing_text: "{index} из {count} сообщение|{index} из {count} сообщений"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -435,7 +435,7 @@ core:
       in_discussion_text: 'в "{discussion}"'
       joined_date_text: "Регистрация: {ago}"
       online_text: "Онлайн"
-      posts_empty_text: "Сообщения отсутствуют."
+      posts_empty_text: "Пока здесь нет ни одного сообщения."
       posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
@@ -492,7 +492,7 @@ core:
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
       javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
-      load_error_message: "Что-то пошло не так при попытке загрузки полной версии этого сайта."
+      load_error_message: "Что-то пошло не так при попытке загрузки полной версии сайта."
       loading_text: "Загрузка..."
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
@@ -545,10 +545,10 @@ core:
 
         Вы зарегистрировались на форуме {forum} с этим адресом электронной почты.
 
-        Если это Вы, то нажмите на ссылку и Ваш аккаунт будет активирован:
+        Если это Вы, то нажмите на ссылку ниже для активации аккаунта:
         {url}
 
-        Если Вы не регистрировались, пожалуйста, проигнорируйте это сообщение.
+        Если Вы не регистрировались, то проигнорируйте это сообщение.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
@@ -558,7 +558,7 @@ core:
 
         Ваш адрес электронной почты на форуме {forum} был изменён.
 
-        Если это Вы, то нажмите на ссылку и Ваш адрес электронной почты будет подтверждён:
+        Если это Вы, то нажмите на ссылку ниже для подтверждения изменения электронной почты:
         {url}
 
         Если Вы не изменяли, пожалуйста, проигнорируйте это сообщение.
@@ -594,7 +594,7 @@ core:
     change_email: "Изменить электронную почту"
     change_password: "Изменить пароль"
     color: "Цвет"                                   # Referenced by flarum-tags.yml
-    confirm_password: "Подтвердите пароль"
+    confirm_password: "Введите пароль"
     confirmation_email_sent: "Мы отправили письмо с подтверждением на {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
     custom_footer_text: "Специальный HTML, который будет отображаться в самой нижней части страницы."
     custom_footer_title: "Изменить нижний колонтитул"
@@ -606,7 +606,7 @@ core:
     edit: "Изменить"
     email: "Email"
     icon: "Иконка"
-    icon_text: "Введите название любого класса иконки <a>Font Awesome</a>, <em>без</em> префикса <code>fa-</code>."
+    icon_text: "Введите название любого класса <a>Font Awesome</a> с префиксом <code>fas fa-</code>."
     load_more: "Загрузить ещё"
     log_in: "Вход"
     log_out: "Выход"
