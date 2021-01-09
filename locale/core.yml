@@ -378,10 +378,10 @@ core:
 
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
-      now_link: "Новое"
-      original_post_link: "Старое"
+      now_link: "Сейчас"
+      original_post_link: "К первому сообщению"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщение|{index} из {count} сообщений"
+      viewing_text: "{index} сообщение|{index} сообщение из {count}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -618,7 +618,7 @@ core:
     posts: "Сообщения"                              # Referenced by flarum-statistics.yml
     previous_page: "Предыдущая страница"
     remove: "Удалить"
-    rename: "Изменить"
+    rename: "Изменить заголовок"
     reply: "Ответить"                               # Referenced by flarum-mentions.yml
     reset_your_password: "Сбросить пароль"
     restore: "Восстановить"
