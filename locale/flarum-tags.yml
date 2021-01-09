@@ -33,7 +33,7 @@ flarum-tags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_edit_tags_label: "Изменение тегов"
+      allow_edit_tags_label: "Изменение тегов темы"
       restrict_by_tag_heading: "По тегу"
       tag_discussions_label: "Изменение тегов темы"
 
@@ -41,9 +41,9 @@ flarum-tags:
     tag_settings:
       range_separator_text: " - "
       required_primary_heading: "Количество основных тегов"
-      required_primary_text: "Введите минимальное и максимальное число основных тегов, которые могут быть применены для темы."
+      required_primary_text: "Введите минимальное и максимальное число основных тегов, которые могут быть применены к теме."
       required_secondary_heading: "Количество дополнительных тегов"
-      required_secondary_text: "Введите минимальное и максимальное число дополнительных тегов, которые могут быть применены для темы."
+      required_secondary_text: "Введите минимальное и максимальное число дополнительных тегов, которые могут быть применены к теме."
       title: "Настройки тегов"
 
     # These translations are used in the Tags page.
