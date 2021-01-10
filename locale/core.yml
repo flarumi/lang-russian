@@ -19,7 +19,7 @@ core:
       custom_styles_heading: "Пользовательские стили"
       custom_styles_text: "Настройка внешнего вида форума при помощи пользовательского кода LESS/CSS, который переопределяет стандартные стилевые конструкции Flarum."
       dark_mode_label: "Тёмный режим"
-      description: "Настройка внешнего вида форума и стилевых элементов."
+      description: "Настройка внешнего вида форума и его стилевых элементов."
       edit_css_button: "Изменить CSS"
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
@@ -94,7 +94,7 @@ core:
     # These translations are used in the email page of the admin interface.
     email:
       addresses_heading: "Адрес"
-      description: "Настройка электронный почты для отправки писем с форума."
+      description: "Настройка электронной почты для отправки писем с форума."
       driver_heading: "Выберите драйвер"
       driver_label: "Драйвер"
       from_label: "Отправитель"
@@ -111,7 +111,7 @@ core:
       send_test_mail_button: "Отправить"
       send_test_mail_heading: "Тестовое письмо"
       send_test_mail_success: "Тестовое письмо успешно отправлено!"
-      send_test_mail_text: "Вы можете отправить письмо с использованием вышеуказанной конфигурации на Ваш адрес электронной почты - {email}."
+      send_test_mail_text: "Вы можете отправить письмо с использованием вышеуказанной конфигурации на свой адрес электронной почты - {email}."
       smtp_heading: "Настройки SMTP"
       submit_button: => core.ref.save_changes
       title: => core.ref.email
