@@ -336,11 +336,11 @@ core:
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: "Последние"
-      newest_button: "Новые"
-      oldest_button: "Старые"
+      latest_button: "Последнее"
+      newest_button: "Новое"
+      oldest_button: "Старое"
       relevance_button: "По релевантности"
-      top_button: "Популярные"
+      top_button: "Популярное"
 
     # These translations are used in the Log In modal dialog.
     log_in:
