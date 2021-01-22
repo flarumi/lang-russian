@@ -9,7 +9,7 @@ flarum-likes:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      like_posts_label: "Использование системы лайков"
+      like_posts_label: "Оценивание сообщений"
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -17,20 +17,20 @@ flarum-likes:
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
       others_text: => core.ref.some_others
-      post_liked_text: "{username} понравилось Ваше сообщение."  # Can be pluralized to agree with the number of users!
+      post_liked_text: "{username} оценил Ваше сообщение."  # Can be pluralized to agree with the number of users!
 
     # These translations are displayed beneath individual posts.
     post:
       like_link: "Мне нравится"
-      liked_by_self_text: "{users} нравится это."  # Can be pluralized to agree with the number of users!
-      liked_by_text: "{users} нравится это|{users} нравится это."
+      liked_by_self_text: "{users} оценили это."  # Can be pluralized to agree with the number of users!
+      liked_by_text: "{users} оценил это.|{users} оценили это."
       others_link: => core.ref.some_others
-      unlike_link: "Больше не нравится"
+      unlike_link: "Не нравится"
       you_text: => core.ref.you
 
     # These translations are used by the Users Who Like This modal dialog.
     post_likes:
-      title: "Кому понравилось сообщение..."
+      title: "Кто оценил сообщение..."
 
     # These translations are used in the Settings page.
     settings:
