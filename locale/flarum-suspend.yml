@@ -9,7 +9,7 @@ flarum-suspend:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      suspend_users_label: "Блокировка пользователей"
+      suspend_users_label: Блокировка пользователей
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -20,18 +20,18 @@ flarum-suspend:
 
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:
-      indefinitely_label: "Заблокирован(а) навсегда"
+      indefinitely_label: Заблокирован(а) навсегда
       limited_time_days_text: " дней"
-      limited_time_label: "Заблокирован(а) на период..."
-      not_suspended_label: "Не заблокирован(а)"
-      status_heading: "Статус блокировки"
+      limited_time_label: Заблокирован(а) на период...
+      not_suspended_label: Не заблокирован(а)"
+      status_heading: Статус блокировки
       submit_button: => core.ref.save_changes
       title: "Заблокировать {username}"
 
     # These translations are displayed as tooltips for user badges.
     user_badge:
-      suspended_tooltip: "Заблокирован(а)"
+      suspended_tooltip: Заблокирован(а)
 
     # These translations are found on the user profile page (admin function).
     user_controls:
-      suspend_button: "Заблокировать"
+      suspend_button: Заблокировать
