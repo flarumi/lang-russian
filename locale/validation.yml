@@ -97,12 +97,12 @@ validation:
   uuid: ":attribute должно содержать корректный UUID."
 
   attributes:
-    username: "имя пользователя"
-    password: "пароль"
-    email: "электронная почта"
-    title: "название"
-    content: "содержимое"
-    name_singular: "имя в единственном числе"
-    name_plural: "имя во множественном числе"
-    tag_count_primary: "количество основных тегов"
-    tag_count_secondary: "количество дополнительных тегов"
+    username: имя пользователя
+    password: пароль
+    email: электронная почта
+    title: название
+    content: содержимое
+    name_singular: имя в единственном числе
+    name_plural: имя во множественном числе
+    tag_count_primary: количество основных тегов
+    tag_count_secondary: количество дополнительных тегов
