@@ -11,7 +11,7 @@ core:
     appearance:
       colored_header_label: Цветная шапка
       colors_heading: Цвет
-      colors_text: "Выберите два цвета для стилизации форума. Первый будет использоваться в качестве цвета подсветки, а второй в качестве фона стилевых элементов."
+      colors_text: Выберите два цвета для стилизации форума. Первый будет использоваться в качестве цвета подсветки, а второй в качестве фона стилевых элементов.
       custom_footer_heading: Нижний колонтитул
       custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: Верхний колонтитул
@@ -19,7 +19,7 @@ core:
       custom_styles_heading: Пользовательские стили
       custom_styles_text: Настройте внешний вид форума с помощью пользовательского кода LESS/CSS, который переопределяет стандартные стилевые конструкции Flarum.
       dark_mode_label: Тёмный режим
-      description: "Настройка внешнего вида форума и его стилевых элементов."
+      description: Настройка внешнего вида форума и его стилевых элементов.
       edit_css_button: Изменить CSS
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
@@ -35,7 +35,7 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: Язык по умолчанию
-      description: "Установка названия форума, выбор языка и изменение настроек."
+      description: Установка названия форума, выбор языка и изменение настроек.
       display_name_heading: Отображаемое имя
       display_name_text: Выберите драйвер, который будет использоваться для отображении имени. По умолчанию отображается имя пользователя.
       forum_description_heading: Описание форума
@@ -75,13 +75,13 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: Удалить группу
-      delete_confirmation: "Вы уверены, что хотите удалить группу? Пользователи этой группы не будут удалены."
+      delete_confirmation: Вы уверены, что хотите удалить группу? Пользователи этой группы не будут удалены.
       hide_label: Скрыть на форуме
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: Название
-      plural_placeholder: Множественное число
-      singular_placeholder: Единственное число
+      plural_placeholder: Во множественном числе
+      singular_placeholder: В единственном числе
       submit_button: => core.ref.save_changes
       title: Создание группы
 
@@ -94,7 +94,7 @@ core:
     # These translations are used in the email page of the admin interface.
     email:
       addresses_heading: Адрес
-      description: "Настройка электронной почты для отправки писем с форума."
+      description: Настройка электронной почты для отправки писем с форума.
       driver_heading: Выберите драйвер
       driver_label: Драйвер
       from_label: Отправитель
@@ -110,7 +110,7 @@ core:
       not_sending_message: Flarum не может отправлять электронные письма. Проблема может быть связана с выбранным драйвером или ошибкой в его конфигурации.
       send_test_mail_button: Отправить
       send_test_mail_heading: Тестовое письмо
-      send_test_mail_success: "Тестовое письмо успешно отправлено!"
+      send_test_mail_success: Тестовое письмо успешно отправлено!
       send_test_mail_text: "Вы можете отправить проверочное письмо с вышеуказанной конфигурацией на свой адрес электронной почты - {email}."
       smtp_heading: Настройки SMTP
       submit_button: => core.ref.save_changes
@@ -239,7 +239,7 @@ core:
     # These translations are used by the composer controls.
     composer:
       close_tooltip: Закрыть
-      exit_full_screen_tooltip: "Выйти из полноэкранного режима
+      exit_full_screen_tooltip: Выйти из полноэкранного режима
       full_screen_tooltip: Развернуть
       minimize_tooltip: Свернуть
       preview_tooltip: Предпросмотр
@@ -247,7 +247,7 @@ core:
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: Напишите сообщение...
-      discard_confirmation: "Вами не была создана тема. Хотите отменить это действие?"
+      discard_confirmation: Вами не была создана тема. Хотите отменить это действие?
       submit_button: Создать тему
       title: => core.ref.start_a_discussion
       title_placeholder: Заголовок темы
@@ -263,7 +263,7 @@ core:
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Вами не было отправлено сообщение. Хотите отменить это действие?"
+      discard_confirmation: Вами не было отправлено сообщение. Хотите отменить это действие?
       posted_message: Ваше сообщение было отправлено.
       submit_button: Ответить
       view_button: => core.ref.view
@@ -327,7 +327,7 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: Нельзя создавать
-      mark_all_as_read_confirmation: "Вы уверены, что хотите отметить все темы прочитанными?"
+      mark_all_as_read_confirmation: Вы уверены, что хотите отметить все темы прочитанными?
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       meta_title_text: => core.ref.all_discussions
       mark_as_read_tooltip: Отметить как прочитанное
@@ -344,7 +344,7 @@ core:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      forgot_password_link: "Забыли пароль?"
+      forgot_password_link: Забыли пароль?
       invalid_login_message: Ваши учётные данные для входа некорректны.
       password_placeholder: => core.ref.password
       remember_me_label: Запомнить меня
@@ -371,10 +371,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить сообщение полностью? Это действие невозможно будет отменить."
+      delete_confirmation: Вы уверены, что хотите удалить сообщение полностью? Это действие невозможно будет отменить.
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
-      hide_confirmation: "Вы уверены, что хотите удалить сообщение?"
+      hide_confirmation: Вы уверены, что хотите удалить сообщение?
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -445,7 +445,7 @@ core:
     user_controls:
       button: Управление
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Сообщения пользователя не будут удалены."
+      delete_confirmation: Вы уверены, что хотите удалить пользователя? Сообщения пользователя не будут удалены.
       delete_error_message: "Не удалось удалить пользователя <i>{username} ({email})</i>"
       delete_success_message: "Пользователь <i>{username} ({email})</i> удалён"
       edit_button: => core.ref.edit
@@ -466,7 +466,7 @@ core:
     # These translations are displayed as error messages.
     error:
       dependent_extensions_message: "Нельзя отключить {extension}, пока не будет отключено: {extensions}"
-      generic_message: "Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз."
+      generic_message: Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз.
       missing_dependencies_message: "Нельзя включить {extension}, пока не будет включено: {extensions}"
       not_found_message: Запрашиваемая страница не найдена.
       permission_denied_message: У вас нет прав для выполнения этого действия.
@@ -521,7 +521,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "Вы уверены, что хотите выйти из аккаунта?"
+      log_out_confirmation: Вы уверены, что хотите выйти из аккаунта?
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
