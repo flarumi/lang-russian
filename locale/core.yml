@@ -330,7 +330,6 @@ core:
       mark_all_as_read_confirmation: Вы уверены, что хотите отметить все темы прочитанными?
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       meta_title_text: => core.ref.all_discussions
-      mark_as_read_tooltip: Отметить как прочитанное
       refresh_tooltip: Обновить
       start_discussion_button: => core.ref.start_a_discussion
 
@@ -382,7 +381,7 @@ core:
       now_link: Сейчас
       original_post_link: В начало
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} сообщение из {count}|{index} сообщение из {count}"
+      viewing_text: "{index} / {count}|{index} / {count}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -583,7 +582,9 @@ core:
       body: |
         Здравствуйте, {username}!
         
-        Это тестовое сообщение предназначено для того, чтобы подтвердить, что Ваша конфигурация электронной почты на форуме настроена правильно.
+        Это тестовое письмо предназначено для подтверждения того, что Ваша конфигурация электронной почты на форуме настроена правильно.       
+        
+        Если Вы не проверяли конфигурацию, то проигнорируйте это сообщение.
         
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -594,7 +595,7 @@ core:
     all_discussions: Темы
     change_email: Изменить электронную почту
     change_password: Изменить пароль
-    color: Цвет                                  # Referenced by flarum-tags.yml
+    color: Цвет                                     # Referenced by flarum-tags.yml
     confirm_password: Введите пароль
     confirmation_email_sent: "Мы отправили письмо с подтверждением на {email}. Если Вы не получите письмо в ближайшее время, то проверьте папку со спамом."
     custom_footer_text: HTML код, который будет отображаться в низу страницы.
