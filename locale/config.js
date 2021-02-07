@@ -1,8 +1,10 @@
 // Russian [ru]
+
 function plural(word, num) {
   const forms = word.split('_')
   return num % 10 === 1 && num % 100 !== 11 ? forms[0] : (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2]) // eslint-disable-line
 }
+
 function relativeTimeWithPlural(number, withoutSuffix, key) {
   const format = {
     mm: withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
@@ -26,6 +28,7 @@ dayjs.locale({
   monthsShort: 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_'),
   ordinal: n => `${n}.`,
   weekStart: 1,
+  yearStart: 4,
   formats: {
     LT: 'H:mm',
     LTS: 'H:mm:ss',
