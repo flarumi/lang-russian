@@ -34,6 +34,7 @@ flarum-tags:
     # These translations are used in the Permissions page of the admin interface.
     permissions:
       allow_edit_tags_label: Изменение тегов темы
+      bypass_tag_counts_label: Bypass tag requirements
       restrict_by_tag_heading: По тегу
       tag_discussions_label: Изменение тегов темы
 
