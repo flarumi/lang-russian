@@ -18,7 +18,7 @@ validation:
   confirmed: ":attribute не проходит проверку на совпадение."
   date: ":attribute не содержит корректную дату."
   date_equals: ":attribute должно совпадать с :date."
-  date_format: ":attribute не соответствует формату :other."
+  date_format: ":attribute не соответствует формату :format."
   different: ":attribute и :other должны отличаться."
   digits: ":attribute должно содержать значения :digits."
   digits_between: ":attribute должно содержать значения между :min и :max."
