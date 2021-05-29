@@ -28,7 +28,6 @@ core:
       favicon_text: Загрузите изображение, которое будет отображаться браузером во вкладке перед названием страницы.
       logo_heading: Логотип
       logo_text: Загрузите изображение, которое будет отображаться вместо текстового названия форума.
-      submit_button: => core.ref.save_changes
       title: Внешний вид
 
     # These translations are used in the Basics page.
@@ -43,11 +42,9 @@ core:
       forum_title_heading: Название форума
       home_page_heading: Главная страница
       home_page_text: Выберите страницу, которая будет отображаться пользователям при посещении форума.
-      saved_message: Изменения были сохранены.
       show_language_selector_label: Показывать переключатель языка
       slug_driver_heading: "Драйвер: {model}"
       slug_driver_text: Выберите драйвер, который будет использоваться при создании семантических путей (URL) для этой модели
-      submit_button: => core.ref.save_changes
       title: Основные настройки
       welcome_banner_heading: Баннер приветствия
       welcome_banner_text: Введите текст, который будет отображаться на всех страницах форума. Используйте этот элемент для приветствия гостей форума.
@@ -61,7 +58,7 @@ core:
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "Настройка внешнего вида форума с помощью пользовательского кода LESS/CSS, который переопределяет <a>стандартные стилевые конструкции</a> Flarum."
+      customize_text: "Настройка внешнего вида форума с помощью пользовательского кода Less/CSS, который переопределяет <a>стандартные стилевые конструкции</a> Flarum."
       submit_button: => core.ref.save_changes
       title: Изменение CSS
 
@@ -113,11 +110,11 @@ core:
       send_test_mail_success: Тестовое письмо успешно отправлено!
       send_test_mail_text: "Вы можете отправить проверочное письмо с вышеуказанной конфигурацией на свой адрес электронной почты - {email}."
       smtp_heading: Настройки SMTP
-      submit_button: => core.ref.save_changes
       title: => core.ref.email
 
     # These translations are used on default extension pages.
     extension:
+      configure_scopes: Configure Scopes
       confirm_uninstall: Данное действие удалит все записи в базе данных и ресурсы, связанные с расширением. Вы уверены, что хотите продолжить?
       disabled: Отключено
       enabled: Включено
@@ -132,8 +129,7 @@ core:
       no_permissions: Данное расширение не имеет прав.
       no_settings: Данное расширение не имеет настроек.
       open_modal: Открыть настройки
-      permissions_title: Права
-      saved_message: Изменения были сохранены.      
+      permissions_title: Права     
       uninstall_button: Удалить
 
     # These translations are used in the session secondary header.
@@ -167,6 +163,8 @@ core:
       email_title: => core.admin.email.description
       permissions_button: => core.admin.permissions.title
       permissions_title: => core.admin.permissions.description
+      userlist_button: => core.admin.users.title
+      userlist_title: => core.admin.users.description
       search_placeholder: Поиск расширений...
 
     # These translations are used in the Permissions page of the admin interface.
@@ -180,7 +178,9 @@ core:
       delete_posts_label: Удаление сообщений
       description: Настройка прав групп пользователей.
       edit_posts_label: Редактирование сообщений
-      edit_users_label: Редактирование пользователей
+      edit_users_label: Edit user attributes
+      edit_users_credentials_label: Edit user credentials
+      edit_users_groups_label: Edit user groups
       global_heading: Глобальные
       moderate_heading: Модерация
       new_group_button: Новая группа
@@ -201,7 +201,7 @@ core:
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
       allow_indefinitely_button: Неограниченно
-      allow_some_minutes_button: "На {count} минуты|На {count} минут"
+      allow_some_minutes_button: "{count, plural, one {На # минуты} other {На # минут}}"
       allow_ten_minutes_button: На 10 минут
       allow_until_reply_button: До ответа
       everyone_button: Все
@@ -209,14 +209,55 @@ core:
       signup_closed_button: Закрыта
       signup_open_button: Открыта
 
-    # These translations are used in the Settings modal dialog.
+    # These translations are used generically in setting fields.
     settings:
+      saved_message: Ваши зменения были сохранены. 
       submit_button: => core.ref.save_changes
 
     # These translations are used in image upload buttons.
     upload_image:
       remove_button: => core.ref.remove
       upload_button: Выбрать изображение...
+      
+    # These translations are used for the users list on the admin dashboard.
+    users:
+      description: A paginated list of all users on your forum.
+
+      grid:
+        columns:
+          edit_user:
+            button: => core.ref.edit
+            title: => core.ref.edit_user
+            tooltip: Edit {username}
+
+          email:
+            title: => core.ref.email
+            visibility_hide: Hide email address
+            visibility_show: Show email address
+
+          group_badges:
+            no_badges: None
+            title: Groups
+
+          join_time:
+            title: Joined
+
+          user_id:
+            title: ID
+
+          username:
+            profile_link_tooltip: Visit {username}'s profile
+            title: => core.ref.username
+
+        invalid_column_content: Invalid
+
+      pagination:
+        back_button: Previous page
+        next_button: Next page
+        page_counter: Page {current} of {total}
+
+      title: => core.ref.users
+      total_users: "Total users: {count}"
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -279,6 +320,7 @@ core:
       rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
+      toggle_dropdown_accessible_label: Toggle discussion actions dropdown menu
 
     # These translations are used in the discussion list.
     discussion_list:
@@ -287,20 +329,6 @@ core:
       mark_as_read_tooltip: Отметить как прочитанное
       replied_text: "{username} ответил(а) {ago}"
       started_text: "{username} создал(а) {ago}"
-
-    # These translations are used in the Edit User modal dialog (admin function).
-    edit_user:
-      activate_button: Активировать пользователя
-      email_heading: => core.ref.email
-      email_label: => core.ref.email
-      groups_heading: Группы
-      password_heading: => core.ref.password
-      password_label: => core.ref.password
-      set_password_label: Изменить пароль
-      submit_button: => core.ref.save_changes
-      title: Изменить пользователя
-      username_heading: => core.ref.username
-      username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
     forgot_password:
@@ -316,10 +344,11 @@ core:
     header:
       admin_button: Админка
       back_to_index_tooltip: Вернуться к списку тем
+      locale_dropdown_accessible_label: Change forum locale
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Аккаунт
-      search_placeholder: Поиск по форуму
+      search_placeholder: Поиск
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
@@ -332,6 +361,7 @@ core:
       meta_title_text: => core.ref.all_discussions
       refresh_tooltip: Обновить
       start_discussion_button: => core.ref.start_a_discussion
+      toggle_sidenav_dropdown_accessible_label: Toggle navigation dropdown menu
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
@@ -339,6 +369,7 @@ core:
       newest_button: Новое
       oldest_button: Старое
       relevance_button: По релевантности
+      toggle_dropdown_accessible_label: Change discussion list sorting
       top_button: Популярное
 
     # These translations are used in the Log In modal dialog.
@@ -359,6 +390,7 @@ core:
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       mark_as_read_tooltip: Отметить как прочитанное
       title: => core.ref.notifications
+      toggle_dropdown_accessible_label: View notifications
       tooltip: => core.ref.notifications
 
     # These translations are used by tooltips displayed for individual posts.
@@ -375,13 +407,14 @@ core:
       edit_button: => core.ref.edit
       hide_confirmation: Вы уверены, что хотите удалить сообщение?
       restore_button: => core.ref.restore
+      toggle_dropdown_accessible_label: Toggle post controls dropdown menu
 
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: Сейчас
       original_post_link: В начало
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} / {count}|{index} / {count}"
+      viewing_text: "{count, plural, one {{index} of {formattedCount} post} other {{index} of {formattedCount} posts}}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -448,6 +481,7 @@ core:
       delete_error_message: "Не удалось удалить пользователя <i>{username} ({email})</i>"
       delete_success_message: "Пользователь <i>{username} ({email})</i> удалён"
       edit_button: => core.ref.edit
+      toggle_dropdown_accessible_label: Toggle user controls dropdown menu
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
@@ -461,6 +495,24 @@ core:
     # These translations are displayed as tooltips for discussion badges.
     badge:
       hidden_tooltip: Скрыто
+      
+     # These translations are used in the dropdown component.
+    dropdown:
+      toggle_dropdown_accessible_label: Toggle dropdown menu
+      
+    # These translations are used in the Edit User modal dialog (admin function).
+    edit_user:
+      activate_button: Активировать пользователя
+      email_heading: => core.ref.email
+      email_label: => core.ref.email
+      groups_heading: Группы
+      password_heading: => core.ref.password
+      password_label: => core.ref.password
+      set_password_label: Set new password
+      submit_button: => core.ref.save_changes
+      title: => core.ref.edit_user
+      username_heading: => core.ref.username
+      username_label: => core.ref.username
 
     # These translations are displayed as error messages.
     error:
@@ -470,6 +522,10 @@ core:
       not_found_message: Запрашиваемая страница не найдена.
       permission_denied_message: У вас нет прав для выполнения этого действия.
       rate_limit_exceeded_message: Вы отправляете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд.
+      
+    # These translations are used in the loading indicator component.
+    loading_indicator:
+      accessible_label: => core.ref.loading
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -493,7 +549,7 @@ core:
     content:
       javascript_disabled_message: Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript.
       load_error_message: Произошла ошибка при попытке загрузить сайт.
-      loading_text: Загрузка...
+      loading_text: => core.ref.loading
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
     discussion:
@@ -606,10 +662,12 @@ core:
     delete_forever: Удалить полностью
     discussions: Темы                               # Referenced by flarum-statistics.yml
     edit: Изменить
+    edit_user: Изменить пользователя
     email: Email
     icon: Иконка
     icon_text: "Введите название любого класса <a>Font Awesome</a> с префиксом <code>fas fa-</code>."
     load_more: Загрузить ещё
+    loading: Загрузка...
     log_in: Вход
     log_out: Выход
     mark_all_as_read: Отметить всё как прочитанное
@@ -627,7 +685,7 @@ core:
     save_changes: Сохранить                         # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Настройки
     sign_up: Регистрация
-    some_others: "{count} другому|{count} другим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count, plural, one {# другому} other {# другим}}"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Создать тему
     username: Имя пользователя
     users: Пользователи                             # Referenced by flarum-statistics.yml
