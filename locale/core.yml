@@ -17,7 +17,7 @@ core:
       custom_header_heading: Верхний колонтитул
       custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: Пользовательские стили
-      custom_styles_text: Настройте внешний вид форума с помощью пользовательского кода LESS/CSS, который переопределяет стандартные стилевые конструкции Flarum.
+      custom_styles_text: Настройте внешний вид форума с помощью пользовательского кода Less/CSS, который переопределяет стандартные стилевые конструкции Flarum.
       dark_mode_label: Тёмный режим
       description: Настройка внешнего вида форума и его стилевых элементов.
       edit_css_button: Изменить CSS
@@ -114,7 +114,7 @@ core:
 
     # These translations are used on default extension pages.
     extension:
-      configure_scopes: Configure Scopes
+      configure_scopes: Настройка прав
       confirm_uninstall: Данное действие удалит все записи в базе данных и ресурсы, связанные с расширением. Вы уверены, что хотите продолжить?
       disabled: Отключено
       enabled: Включено
@@ -177,10 +177,10 @@ core:
       delete_posts_forever_label: Физическое удаление сообщений
       delete_posts_label: Удаление сообщений
       description: Настройка прав групп пользователей.
-      edit_posts_label: Редактирование сообщений
-      edit_users_label: Edit user attributes
-      edit_users_credentials_label: Edit user credentials
-      edit_users_groups_label: Edit user groups
+      edit_posts_label: Изменение сообщений
+      edit_users_label: Изменение атрибутов пользователя
+      edit_users_credentials_label: Изменение учётных данных пользователя
+      edit_users_groups_label: Изменение групп пользователя
       global_heading: Глобальные
       moderate_heading: Модерация
       new_group_button: Новая группа
@@ -189,14 +189,14 @@ core:
       read_heading: Чтение
       rename_discussions_label: Изменение заголовка темы
       reply_to_discussions_label: Ответ в теме
+      search_users_label: Поиск пользователей
       sign_up_label: Регистрация
       start_discussions_label: Создание темы
       title: Права
-      view_discussions_label: Просмотр темы
+      view_forum_label: Просмотр форума (тем и пользователей)
       view_hidden_groups_label: Просмотр скрытых групп
       view_last_seen_at_label: Просмотр времени последней активности
       view_post_ips_label: Просмотр IP адресов
-      view_user_list_label: Просмотр списка пользователей
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -211,7 +211,7 @@ core:
 
     # These translations are used generically in setting fields.
     settings:
-      saved_message: Ваши зменения были сохранены. 
+      saved_message: Ваши изменения были сохранены. 
       submit_button: => core.ref.save_changes
 
     # These translations are used in image upload buttons.
@@ -221,46 +221,46 @@ core:
       
     # These translations are used for the users list on the admin dashboard.
     users:
-      description: A paginated list of all users on your forum.
+      description: Список всех пользователей форума.
 
       grid:
         columns:
           edit_user:
             button: => core.ref.edit
             title: => core.ref.edit_user
-            tooltip: Edit {username}
+            tooltip: Изменить {username}
 
           email:
             title: => core.ref.email
-            visibility_hide: Hide email address
-            visibility_show: Show email address
+            visibility_hide: Скрыть адрес электронной почты
+            visibility_show: Показать адрес электронной почты
 
           group_badges:
-            no_badges: None
-            title: Groups
+            no_badges: Нет
+            title: Группы
 
           join_time:
-            title: Joined
+            title: Регистрация
 
           user_id:
             title: ID
 
           username:
-            profile_link_tooltip: Visit {username}'s profile
+            profile_link_tooltip: Перейти к профилю {username}
             title: => core.ref.username
 
-        invalid_column_content: Invalid
+        invalid_column_content: Недопустимое содержимое
 
       pagination:
-        back_button: Previous page
-        next_button: Next page
-        page_counter: Page {current} of {total}
+        back_button: Предыдущая страница
+        next_button: Следующая страница
+        page_counter: Страница {current} из {total}
 
       title: => core.ref.users
-      total_users: "Total users: {count}"
+      total_users: "Пользователи: {count}"
 
-  # Translations in this namespace are used by the forum user interface.
-  forum:
+    # Translations in this namespace are used by the forum user interface.
+    forum:
 
     # These translations are used in the Change Email modal dialog.
     change_email:
@@ -348,7 +348,8 @@ core:
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Аккаунт
-      search_placeholder: Поиск
+      search_placeholder: Поиск...
+      session_dropdown_accessible_label: Toggle session options dropdown menu
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
@@ -414,7 +415,7 @@ core:
       now_link: Сейчас
       original_post_link: В начало
       unread_text: "{count} не прочитано"
-      viewing_text: "{count, plural, one {{index} of {formattedCount} post} other {{index} of {formattedCount} posts}}"
+      viewing_text: "{count, plural, one {{index}/{formattedCount}} other {{index}/{formattedCount}}}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -588,7 +589,7 @@ core:
 
   # Translations in this namespace are used in messages output by the API.
   api:
-    invalid_username_message: Имя пользователя может содержать только буквы, цифры и тире.
+    invalid_username_message: "Имя пользователя может содержать только буквы, цифры и тире."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
