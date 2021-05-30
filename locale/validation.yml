@@ -69,7 +69,7 @@ validation:
     file: ":attribute должно быть не меньше :min килобайт."
     string: ":attribute не должно содержать меньше :min символов."
     array: ":attribute не должно содержать меньше :min элементов."
-   multiple_of: ":attribute должно быть кратно :value."
+  multiple_of: ":attribute должно быть кратно :value."
   not_in: "Выбранное :attribute некорректно."
   not_regex: ":attribute имеет некорректный формат."
   numeric: ":attribute должно быть числом."
