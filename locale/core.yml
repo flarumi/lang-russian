@@ -129,7 +129,7 @@ core:
       no_permissions: Данное расширение не имеет прав.
       no_settings: Данное расширение не имеет настроек.
       open_modal: Открыть настройки
-      permissions_title: Права     
+      permissions_title: Права   
       uninstall_button: Удалить
 
     # These translations are used in the session secondary header.
@@ -169,31 +169,31 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_post_editing_label: Изменение сообщения
-      allow_renaming_label: Изменение заголовка темы
+      allow_post_editing_label: Редактирование сообщения
+      allow_renaming_label: Редактирование заголовка темы
       create_heading: Создание
       delete_discussions_forever_label: Физическое удаление тем
       delete_discussions_label: Удаление темы
       delete_posts_forever_label: Физическое удаление сообщений
       delete_posts_label: Удаление сообщений
       description: Настройка прав групп пользователей.
-      edit_posts_label: Изменение сообщений
-      edit_users_label: Изменение атрибутов пользователя
-      edit_users_credentials_label: Изменение учётных данных пользователя
-      edit_users_groups_label: Изменение групп пользователя
+      edit_posts_label: Редактирование сообщений
+      edit_users_label: Редактирование атрибутов пользователя
+      edit_users_credentials_label: Редактирование учётных данных пользователя
+      edit_users_groups_label: Редактирование групп пользователя
       global_heading: Глобальные
       moderate_heading: Модерация
       new_group_button: Новая группа
       participate_heading: Участие
       post_without_throttle_label: Ответ без ожидания
       read_heading: Чтение
-      rename_discussions_label: Изменение заголовка темы
+      rename_discussions_label: Редактирование заголовка темы
       reply_to_discussions_label: Ответ в теме
       search_users_label: Поиск пользователей
       sign_up_label: Регистрация
       start_discussions_label: Создание темы
       title: Права
-      view_forum_label: Просмотр форума (тем и пользователей)
+      view_forum_label: Просмотр форума (темы и пользователи)
       view_hidden_groups_label: Просмотр скрытых групп
       view_last_seen_at_label: Просмотр времени последней активности
       view_post_ips_label: Просмотр IP адресов
@@ -211,7 +211,7 @@ core:
 
     # These translations are used generically in setting fields.
     settings:
-      saved_message: Ваши изменения были сохранены. 
+      saved_message: Ваши изменения были сохранены.
       submit_button: => core.ref.save_changes
 
     # These translations are used in image upload buttons.
@@ -259,8 +259,8 @@ core:
       title: => core.ref.users
       total_users: "Пользователи: {count}"
 
-    # Translations in this namespace are used by the forum user interface.
-    forum:
+  # Translations in this namespace are used by the forum user interface.
+  forum:
 
     # These translations are used in the Change Email modal dialog.
     change_email:
@@ -320,7 +320,7 @@ core:
       rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
-      toggle_dropdown_accessible_label: Toggle discussion actions dropdown menu
+      toggle_dropdown_accessible_label: Переключение выпадающего меню действий темы
 
     # These translations are used in the discussion list.
     discussion_list:
@@ -344,12 +344,12 @@ core:
     header:
       admin_button: Админка
       back_to_index_tooltip: Вернуться к списку тем
-      locale_dropdown_accessible_label: Change forum locale
+      locale_dropdown_accessible_label: Переключение языка
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Аккаунт
-      search_placeholder: Поиск...
-      session_dropdown_accessible_label: Toggle session options dropdown menu
+      search_placeholder: Поиск по форуму
+      session_dropdown_accessible_label: Переключение выпадающего меню параметров сеанса
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
@@ -362,7 +362,7 @@ core:
       meta_title_text: => core.ref.all_discussions
       refresh_tooltip: Обновить
       start_discussion_button: => core.ref.start_a_discussion
-      toggle_sidenav_dropdown_accessible_label: Toggle navigation dropdown menu
+      toggle_sidenav_dropdown_accessible_label: Переключение выпадающего меню навигации
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
@@ -370,7 +370,7 @@ core:
       newest_button: Новое
       oldest_button: Старое
       relevance_button: По релевантности
-      toggle_dropdown_accessible_label: Change discussion list sorting
+      toggle_dropdown_accessible_label: Изменение сортировки списка тем
       top_button: Популярное
 
     # These translations are used in the Log In modal dialog.
@@ -391,7 +391,7 @@ core:
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       mark_as_read_tooltip: Отметить как прочитанное
       title: => core.ref.notifications
-      toggle_dropdown_accessible_label: View notifications
+      toggle_dropdown_accessible_label: Просмотр оповещений
       tooltip: => core.ref.notifications
 
     # These translations are used by tooltips displayed for individual posts.
@@ -408,14 +408,14 @@ core:
       edit_button: => core.ref.edit
       hide_confirmation: Вы уверены, что хотите удалить сообщение?
       restore_button: => core.ref.restore
-      toggle_dropdown_accessible_label: Toggle post controls dropdown menu
-
+      toggle_dropdown_accessible_label: Переключение выпадающего меню управления сообщения
+      
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: Сейчас
       original_post_link: В начало
       unread_text: "{count} не прочитано"
-      viewing_text: "{count, plural, one {{index}/{formattedCount}} other {{index}/{formattedCount}}}"
+      viewing_text: "{count, plural, one {{index} / {formattedCount}} other {{index} / {formattedCount}}}"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -482,7 +482,7 @@ core:
       delete_error_message: "Не удалось удалить пользователя <i>{username} ({email})</i>"
       delete_success_message: "Пользователь <i>{username} ({email})</i> удалён"
       edit_button: => core.ref.edit
-      toggle_dropdown_accessible_label: Toggle user controls dropdown menu
+      toggle_dropdown_accessible_label: Переключение выпадающего меню управления пользователя
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
@@ -497,9 +497,9 @@ core:
     badge:
       hidden_tooltip: Скрыто
       
-     # These translations are used in the dropdown component.
+    # These translations are used in the dropdown component.
     dropdown:
-      toggle_dropdown_accessible_label: Toggle dropdown menu
+      toggle_dropdown_accessible_label: Переключение выпадающего меню
       
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
@@ -509,7 +509,7 @@ core:
       groups_heading: Группы
       password_heading: => core.ref.password
       password_label: => core.ref.password
-      set_password_label: Set new password
+      set_password_label: Установить новый пароль
       submit_button: => core.ref.save_changes
       title: => core.ref.edit_user
       username_heading: => core.ref.username
@@ -523,7 +523,7 @@ core:
       not_found_message: Запрашиваемая страница не найдена.
       permission_denied_message: У вас нет прав для выполнения этого действия.
       rate_limit_exceeded_message: Вы отправляете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд.
-      
+
     # These translations are used in the loading indicator component.
     loading_indicator:
       accessible_label: => core.ref.loading
@@ -589,7 +589,7 @@ core:
 
   # Translations in this namespace are used in messages output by the API.
   api:
-    invalid_username_message: "Имя пользователя может содержать только буквы, цифры и тире."
+    invalid_username_message: Имя пользователя может содержать только буквы, цифры и тире.
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
@@ -686,7 +686,7 @@ core:
     save_changes: Сохранить                         # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Настройки
     sign_up: Регистрация
-    some_others: "{count, plural, one {# другому} other {# другим}}"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count, plural, one {# другому} other {# другим}}"  # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Создать тему
     username: Имя пользователя
     users: Пользователи                             # Referenced by flarum-statistics.yml
