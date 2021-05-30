@@ -589,7 +589,7 @@ core:
 
   # Translations in this namespace are used in messages output by the API.
   api:
-    invalid_username_message: Имя пользователя может содержать только буквы, цифры и тире.
+    invalid_username_message: "Имя пользователя может содержать только буквы, цифры и тире."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
