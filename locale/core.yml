@@ -254,7 +254,7 @@ core:
       pagination:
         back_button: Предыдущая страница
         next_button: Следующая страница
-        page_counter: {current} / {total}
+        page_counter: Страница {current} / {total}
 
       title: => core.ref.users
       total_users: "Пользователи: {count}"
